@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  @supports (-moz-appearance: none) {
+    .f-hidden {
+      display: none;
+    }
+  }
+}
+
+@layer base {
+
+  @font-face {
+  font-family: 'CFAstyPlaisio';
+  src: url('https://res.plaisio.gr/raw/upload/Campaigns/B2C-Campaigns/Shared/fonts/CFAstyPlaisio-Oblique.otf') format('opentype');
+  font-style: oblique;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Black Diamond';
+  src: url('https://res.plaisio.gr/raw/upload/v1764757019/Campaigns/B2C-Campaigns/Core/xmas/2025/fonts/BlackDiamond.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+  html {
+    font-family: "plaisioRegular";
+    scroll-behavior: smooth;
+  }
+
+/* 
+  a:hover {
+    text-decoration: none;
+    color: initial!important;
+  } */
+
+   .swiper-pagination {
+    left: auto!important;
+
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 1.5rem;
+  background: #6F6F73;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  opacity: 1;  
+  width: 49px;
+  height: 8px;
+  background: #36BCF2;
+}
+
+
+
+
+}
