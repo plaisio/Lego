@@ -1,25 +1,35 @@
 {
-  "name": "landing-new-test",
+  "name": "plaisio_landing",
   "version": "1.0.0",
-  "description": "Basic Plaisio landing page configuration for building tailwind",
-  "main": "index.js",
+  "main": "conprod.js",
   "scripts": {
-    "build-tailwind-css": "tailwindcss build -i src/tailwind_style.css -o assets/css/tailwinds.css",
-    "watch-tailwind-css": "tailwindcss build -i src/tailwind_style.css -o assets/css/tailwinds.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "build-tailwind-css": "tailwindcss -i src/tailwind_style.css -o assets/css/tailwinds.css",
+    "watch-tailwind-css": "tailwindcss -i src/tailwind_style.css -o assets/css/tailwinds.css --watch"
   },
-  "keywords": [
-    "tailwind",
-    "Tailwind"
-  ],
+  "keywords": [],
   "author": "Vangelis",
   "license": "ISC",
-  "devDependencies": {
-    "gulp": "^4.0.2",
-    "tailwindcss": "^3.2.4"
-  },
   "dependencies": {
+    "@constructor-io/constructorio-client-javascript": "^2.77.0",
+    "gulp": "^5.0.1"
+  },
+  "devDependencies": {
     "autoprefixer": "^10.4.13",
     "gulp-rename": "^2.0.0",
-    "tailwindcss": "^3.3.3"
-  }
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.3.3",
+    "vite": "^7.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plaisio/Lego.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plaisio/Lego/issues"
+  },
+  "homepage": "https://github.com/plaisio/Lego#readme",
+  "description": ""
 }

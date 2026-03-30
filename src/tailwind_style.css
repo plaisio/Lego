@@ -45,20 +45,35 @@
 }
 
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  border-radius: 1.5rem;
-  background: #6F6F73;
+  width: 27px;
+  height: 11px;
+  border: #B7B7B7 1px solid;
+  border-radius: 0px;
+  background: #fff;
   opacity: 1;
 }
 
 .swiper-pagination-bullet-active{
   opacity: 1;  
-  width: 49px;
-  height: 8px;
-  background: #36BCF2;
+  width: 27px;
+  height: 11px;
+  background: #FFD401;
 }
 
+.swiper-button-disabled{
+
+  cursor: auto;
+  pointer-events: auto;
+  color: #CECECE!important;
+  font-family: plaisioRegular!important;
+  font-weight: normal!important;
+}
+
+@media (min-width: 1024px) {
+  .product-grid-swiper .swiper-wrapper {
+    transform: none !important;
+  }
+}
 
 
 

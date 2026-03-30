@@ -23,6 +23,9 @@ module.exports = {
       '4k': '3073px', 
     },
     extend: {
+      display: {
+        contents: 'contents',
+      },
       fontFamily: {
         'regular': [ "plaisioRegular","plaisioRegular Fallback"],
         'bold': ["plaisioBold","plaisioBold Fallback"],
