@@ -36,7 +36,7 @@ module.exports = {
       }, 
       boxShadow: {
         'glow': '0 0 20px rgba(255, 255, 255, 0.6)',
-        'glow-strong': '0 0 40px rgba(255, 255, 255, 0.9)',
+        'glow-strong': '0 0 40px rgba(19, 133, 212, 0.9)',
 
       },
      
@@ -46,10 +46,14 @@ module.exports = {
           '0%, 100%': { boxShadow: '0 0 20px rgba(166, 103, 255, 0.6)' },
           '50%': { boxShadow: '0 0 40px rgba(166, 103, 255, 0.9)' }
         },
-        fadeIn: {
-          '0%': { opacity: '0' },
-          '100%': { opacity: '1' }
-        }
+        'wiggle-rotate': {
+          '0%':   { transform: 'rotate(0deg)' },
+          '15%':  { transform: 'rotate(-4deg)' },
+          '35%':  { transform: 'rotate(6deg)' },
+          '55%':  { transform: 'rotate(-3deg)' },
+          '75%':  { transform: 'rotate(4deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
       }, 
 
 
@@ -62,6 +66,7 @@ module.exports = {
        animation: {    
          'glow': 'glow 1.5s ease-in-out infinite',  
         'fadeIn': 'fadeIn 800ms linear forwards',  
+        'wiggle-rotate': 'wiggle-rotate 2.8s ease-in-out infinite',
         // 'drop': 'drop 2s linear 1',
         // 'drop2': 'drop 3s 2.2s linear infinite',
         // 'drop3': 'drop 3s 1.5s linear infinite',
