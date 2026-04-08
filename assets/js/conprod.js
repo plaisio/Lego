@@ -1,7 +1,7 @@
 import ConstructorIO from "@constructor-io/constructorio-client-javascript";
 
       const productsData = [
-        { id: "5097797"}, { id: "5097800"}, { id: "5098130"}, { id: "5104637"}
+        { id: "5097797"}, { id: "5097800"}, { id: "5098130"}, { id: "5085365"}
       ];
 const products = productsData.map(p => p.id);
 
