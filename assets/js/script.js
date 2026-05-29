@@ -1,9 +1,5 @@
 
 
-
-      
-
-
 function toggleNavbar() {
   const navbarLinks = document.getElementById('navbarLinks');
   navbarLinks.style.display =
@@ -59,32 +55,3 @@ if (isMobile) {
     },
   })
 }
-
-
-
-  (function initMagnificPopup() {
-  function safeInit() {
-    // Guard: jQuery + plugin + DOM
-    if (
-      typeof window.jQuery === 'undefined' ||
-      typeof jQuery.fn.magnificPopup === 'undefined'
-    ) {
-      // Retry after a short delay if scripts not ready yet
-      
-        console.log('Magnific Popup retrying initialization...');
-      return setTimeout(safeInit, 100);
-    }
-
-    // Run only after DOM is ready
-    jQuery(function($) {
-      const $videos = $('.video-popup');
-      if ($videos.length) {
-        $videos.magnificPopup({ type: 'iframe' });
-        // Reveal them if you were hiding them
-        $videos.css('visibility', 'visible');
-      }
-    });
-  }
-
-  safeInit();
-})();
