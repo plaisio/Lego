@@ -65,6 +65,8 @@
 
 
 
+
+
     
 
 
@@ -86,42 +88,7 @@
   <main id="main" class="text-center max-w-screen-full mx-auto overflow-hidden relative bg-[#f1f1f1]">
     <!-- Page Header -->
 
-    <header class="relative !pb-0  !min-h-0 bg-black">  
-      <section class="max-w-screen-xl mx-auto pt-[65px]">
-        <div class="md:px-0 md:-mb-32 w-full navbar-wrapper max-w-screen-xl mx-auto " style="position: absolute;position: -webkit-absolute; top: 0;z-index: 9999;">
-          <div class="px-6 flex items-center justify-between navbars">
 
-
-            <div class="hidden lg:flex space-x-4" id="nav">
-              <a href="#age" class="text-sm text-white hover:bg-white hover:text-black px-5 py-1 transition-colors duration-200 delay-75 ">Διάλεξε ανά ηλικία</a>
-              <a href="#theme" class="text-sm text-white hover:bg-white hover:text-black px-5 py-1 transition-colors duration-200 delay-75 ">Διάλεξε ανά θέμα</a>
-              <a href="#new" class="text-sm text-white hover:bg-white hover:text-black px-5 py-1 transition-colors duration-200 delay-75 ">Νέες αφίξεις</a>
-              <a href="#budget" class="text-sm text-white hover:bg-white hover:text-black px-5 py-1 transition-colors duration-200 delay-75 ">Διάλεξε ανά budget</a>
-
-            </div>
-
-            <div class="lg:hidden">
-              <button onclick="toggleNavbar()" class="">
-                <svg class="w-6 h-6" fill="#fff" stroke="#fff" viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-                  </path>
-                </svg>
-              </button>
-            </div>
-          </div>
-
-          <div class="lg:hidden bg-black" id="navbarLinks" style="display: none;">
-            <div class="flex flex-col items-center mt-0">
-              <a href="#age" class="px-4 py-2 text-white">Διάλεξε ανά ηλικία</a>
-              <a href="#theme" class="px-4 py-2 text-white">Διάλεξε ανά θέμα</a>
-              <a href="#new" class="px-4 py-2 text-white">Νέες αφίξεις</a>
-              <a href="#budget" class="px-4 py-2 text-white">Διάλεξε ανά budget</a>
-            </div>
-          </div>
-        </div>
-      </section> 
-    </header>
 
 
 
@@ -465,6 +432,23 @@
        </div>
       </section>
 
+           <!-- <template id="product-card-template">
+            <article class="product-card swiper-slide flex flex-col items-center justify-between py-4 px-4 xl:px-6 bg-white rounded-lg w-[248px] h-[440px]">
+              <a class="product-link" href="#">
+                <img class="product-image mx-auto w-[194px] h-[194px]" alt="">
+              </a>
+							<div class="flex flex-col self-start pb-8">                  
+                <p class="price font-bold text-xl text-left self-start"></p>
+                <div class="h-8">
+                  <a href="" class="product-link hover:underline">
+                    <p class="title text-left max-w-[210px] self-start"></p>
+                  </a>   
+                </div>    
+              </div>
+						  <a href="" class="product-link bg-[#F1F1F1] rounded-md hover:font-bold hover:bg-[#0045B5] hover:text-white transition-all duration-200 px-7 py-3 max-w-[168px]">Δες το εδώ</a>
+            </article>
+          </template> -->
+
       <section class="xl:pt-10 pb-10 xl:pb-20 relative" id="new">        
        <img src="https://res.plaisio.gr/image/upload/Campaigns/B2C-Campaigns/Core/lego/images/figure2.png" alt="" class="hidden 3xl:block absolute -left-8 bottom-0 max-w-[200px] full:max-w-full"/>
         <div class="relative pt-10 xl:max-w-screen-xl mx-auto">
@@ -502,22 +486,7 @@
             </div>
           </section>
 
-          <template id="product-card-template">
-            <article class="product-card swiper-slide flex flex-col items-center justify-between py-4 px-4 xl:px-6 bg-white rounded-lg w-[248px] h-[440px]">
-              <a class="product-link" href="#">
-                <img class="product-image mx-auto w-[194px] h-[194px]" alt="">
-              </a>
-							<div class="flex flex-col self-start pb-8">                  
-                <p class="price font-bold text-xl text-left self-start"></p>
-                <div class="h-8">
-                  <a href="" class="product-link hover:underline">
-                    <p class="title text-left max-w-[210px] self-start"></p>
-                  </a>   
-                </div>    
-              </div>
-						  <a href="" class="product-link bg-[#F1F1F1] rounded-md hover:font-bold hover:bg-[#0045B5] hover:text-white transition-all duration-200 px-7 py-3 max-w-[168px]">Δες το εδώ</a>
-            </article>
-          </template>
+
 
 
         </div>
@@ -625,7 +594,6 @@
       </section>
 
 
-
     </section>
 
     <!-- .page-content-->
@@ -635,8 +603,9 @@
   <script src="https://res.plaisio.gr/raw/upload/Campaigns/B2C-Campaigns/Shared/js/jquery-3.7.1.min.js"></script>
   <script src="https://res.plaisio.gr/raw/upload/v1742998127/Campaigns/B2C-Campaigns/Shared/swiper/swiper-bundle.min.js"></script>
   <script src="https://res.plaisio.gr/raw/upload/v1779863552/Campaigns/B2C-Campaigns/Shared/fslighbox/fslightbox.js"></script>
-  <script src="https://res.plaisio.gr/raw/upload/v1775048574/Campaigns/B2C-Campaigns/Core/lego/js/script.js"></script> 
-   <script src="https://res.plaisio.gr/plaisio-acc/raw/upload/v1779865064/Campaigns/B2C-Campaigns/core/lego/js/collection.js"></script>
+  <script src="https://res.plaisio.gr/raw/upload/v1780402825/Campaigns/B2C-Campaigns/Core/lego/js/script.js" defer></script> 
+   <script src="https://res.plaisio.gr/raw/upload/v1780403857/Campaigns/B2C-Campaigns/Core/lego/js/collection.js" defer></script>
+
 
 
 

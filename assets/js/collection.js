@@ -116,13 +116,26 @@
       ].join("/");
     }
 
-    function renderResults(gridEl, payload, staticCard) {
-      var tpl = document.getElementById("product-card-template");
-      if (!tpl || !tpl.content.firstElementChild) {
-        console.error("product-card-template missing or empty");
-        return;
-      }
+    function createCard() {
+      var div = document.createElement("div");
+      div.innerHTML = '<article class="product-card swiper-slide flex flex-col items-center justify-between py-4 px-4 xl:px-6 bg-white rounded-lg w-[248px] h-[440px]">'
+        + '<a class="product-link" href="#">'
+        + '<img class="product-image mx-auto w-[194px] h-[194px]" alt="">'
+        + '</a>'
+        + '<div class="flex flex-col self-start pb-8">'
+        + '<p class="price font-bold text-xl text-left self-start"></p>'
+        + '<div class="h-8">'
+        + '<a href="" class="product-link hover:underline">'
+        + '<p class="title text-left max-w-[210px] self-start"></p>'
+        + '</a>'
+        + '</div>'
+        + '</div>'
+        + '<a href="" class="product-link bg-[#F1F1F1] rounded-md hover:font-bold hover:bg-[#0045B5] hover:text-white transition-all duration-200 px-7 py-3 max-w-[168px]">Δες το εδώ</a>'
+        + '</article>';
+      return div.firstElementChild;
+    }
 
+    function renderResults(gridEl, payload, staticCard) {
       var response = payload && payload.response;
       var results = (response && response.results) ? response.results : (payload && payload.results ? payload.results : []);
 
@@ -154,7 +167,7 @@
         var nums = extractProductNumbers(item);
         var price = nums.price, fromPrice = nums.fromPrice, saveAmount = nums.saveAmount;
 
-        var card = tpl.content.firstElementChild.cloneNode(true);
+        var card = createCard();
 
         var id = (item && item.data && item.data.id) || (item && item.id);
         if (id != null) card.dataset.product = String(id);
@@ -253,8 +266,5 @@
     }
   }
 
-
-
-
- main();
+  main();
 })();

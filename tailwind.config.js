@@ -28,7 +28,7 @@ module.exports = {
       },
       fontFamily: {
         'regular': [ "plaisioRegular","plaisioRegular Fallback"],
-        'bold': ["plaisioBold","plaisioBold Fallback"],
+        'bold': ["plaisioRegular","plaisioBold Fallback"],
         'light': ["plaisioLight","plaisioLight Fallback"], 
         'oblique': ['CFAstyPlaisio', 'sans-serif'],
         'boblique': ['CFAstyPlaisio', 'sans-serif'],
